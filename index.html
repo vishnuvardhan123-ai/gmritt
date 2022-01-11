@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APPLICATION FORM</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="gmr-logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <fieldset>
+        <legend>STUDENT DETAILS</legend>
+        <div class="form">
+          First Name: <input type="text" name="firstname" placeholder="First Name" required><br>
+          Last Name: <input type="text" name="lastname" placeholder="Last Name" required><br>
+          ID No: <input type="number" name="id" placeholder="ID No" required><br>
+          Date of Birth: <input type="date" name="birthdate" required><br>
+          Gender:
+          <input type="radio" name="options">Male
+          <input type="radio" name="options">Female
+          <input type="radio" name="options">Other
+          <br>
+          Father Name: <input type="text" name="fathername" placeholder="Father Name"><br>
+          Mother Name: <input type="text" name="mothername" placeholder="Mother Name"><br>
+          Email: <input type="email" name="email" placeholder="Email"><br>
+          Mobile No: <input type="number" name="mobileno" placeholder="Mobile No"><br>
+          Address: <textarea rows="6" cols="20" placeholder="Address"></textarea><br>
+          Languages Known:
+          <input type="checkbox" name="checkboxes" checked>Telugu
+          <input type="checkbox" name="checkboxes">English
+          <input type="checkbox" name="checkboxes">Hindi
+          <input type="checkbox" name="checkboxes">Tamil
+          <br>
+          <label for="courses">Select Course: </label>
+          <select name="course" id="courses">
+            <option value="WEB TECHNOLOGIES" selected>WEB TECHONOLOGIES</option>
+            <option value="OPERATING SYSTEMS">OPERATING SYSTEMS</option>
+            <option value="COA">COA</option>
+            <option value="JAVA">JAVA</option>
+          </select>
+          <br>
+          Upload Aadhaar:
+          <input type="file" name="aadhaar" accept="image"><br><br>
+          <button id="submitbtn" type="submit">Submit</button>
+        </div>
+        <img id="img" alt="form image" src="form.png" />
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>
